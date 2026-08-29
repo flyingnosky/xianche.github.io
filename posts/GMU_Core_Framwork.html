@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMU Core Framework</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="../index.html">Xianche</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#posts">Posts</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-shell">
+      <article>
+        <header class="article-header">
+          <h1>GMU Core Framework</h1>
+        </header>
+
+        <div class="article-body">
+          <p>GMU Core Framework支持在不同adreno GPU代际与GPU交互提供通用层。该框架处理内存管理，IOMMU mapping，clock control，trace数据处理和GMU通用的交互基础。</p>
+
+          <h2>Core Architecture</h2>
+          <p>GMU Core Framework是KGSL驱动和特定代GMU实现（比如A6XX, GEN7）之间的独立与平台的layer。它提供所有GMU实现要求的通用的服务，它授权特定GEN的操作给gmu_dev_ops函数指针。</p>
+
+          <h3>System Structure</h3>
+          <img src="./images/GMU_Core_Framework.svg" alt="GMU_Core_Framework" />
+        </div>
+
+        <a class="back-link" href="../index.html">← 返回首页</a>
+      </article>
+    </main>
+  </body>
+</html>
