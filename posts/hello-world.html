@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, World：从零开始做个人博客</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="../index.html">Xianche</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#posts">Posts</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-shell">
+      <article>
+        <header class="article-header">
+          <p class="eyebrow">Tech</p>
+          <h1>Hello, World：从零开始做个人博客</h1>
+          <div class="article-meta">
+            <time datetime="2026-08-29">2026-08-29</time>
+            <span>• 4 min read</span>
+          </div>
+        </header>
+
+        <div class="article-body">
+          <p>
+            很多人一开始都觉得“做一个博客很难”，但实际上只要把内容和结构清楚，搭建一个简单的网站并不复杂。GitHub Pages
+            提供了一个非常轻量、免费、适合个人展示的方案。
+          </p>
+
+          <h2>为什么选 GitHub Pages</h2>
+          <p>
+            GitHub Pages 的好处很明显：免费、稳定、无需自己买域名和服务器，且和 GitHub 仓库直接结合得很好。对于个人博客、项目展示和技术笔记来说，非常合适。
+          </p>
+
+          <h2>搭建步骤</h2>
+          <ul>
+            <li>创建一个仓库，命名为 <code>你的用户名.github.io</code></li>
+            <li>在仓库中放置首页文件，例如 <code>index.html</code></li>
+            <li>在 GitHub 上开启 Pages 功能</li>
+            <li>推送代码到分支并发布</li>
+          </ul>
+
+          <h2>最小可运行结构</h2>
+          <p>一个非常简单的博客结构大概是这样：</p>
+          <pre><code>.
+├── index.html
+├── style.css
+├── posts/
+│   ├── hello-world.html
+│   └── building-my-first-project.html
+└── README.md</code></pre>
+
+          <h2>开始写文章</h2>
+          <p>
+            网站最重要的并不是炫丽的动画，而是内容本身。你可以写技术笔记、反思、开源经验、学习过程、生活碎片。只要你愿意持续记录，博客就会慢慢变成你的数字档案。
+          </p>
+
+          <h2>下一步</h2>
+          <p>
+            如果你已经准备好了内容，下一步就是不断发布文章，更新首页和文章列表。长期来看，博客的价值来自持续的积累，而不是一次性做得很完美。
+          </p>
+        </div>
+
+        <a class="back-link" href="../index.html">← 返回首页</a>
+      </article>
+    </main>
+  </body>
+</html>
